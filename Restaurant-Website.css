@@ -287,7 +287,17 @@ button {
   align-items: center;
 }
 
-.gallery h2:before,
+.gallery h2:before {
+  display: block;
+  content: "";
+  height: 10px;
+  background: linear-gradient(
+    to var(--direction, left),
+    var(--yellow),
+    transparent
+  );
+}
+
 .gallery h2:after {
   display: block;
   content: "";
